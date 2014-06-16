@@ -1,0 +1,68 @@
+doctype html
+html(ng-app='Admin')
+    head
+        title Admin Page
+        // build:css ./style/main.css
+        link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='styles/main.css')
+        // endbuild
+    body#admin.main(ng-controller='AdminCtrl')
+        .container
+            .row(ng-if='vm.state === "challenge"')
+                .col-xs-6.col-xs-offset-3
+                    .panel.panel-primary
+                        .panel-heading
+                            h5 Enter Password
+                        .panel-body
+                            form.form(ng-submit='vm.onPasswordSubmit()')
+                                .text-danger(ng-if='vm.passForm.message')
+                                    | {{ vm.passForm.message }}
+                                .form-group
+                                    input.form-control(type='password', ng-model='vm.passForm.password', required, autofocus)
+                                .pull-right
+                                    input.btn.btn-primary(type='submit', value='Go')
+            .row(ng-if='vm.state === "ready"')
+                .col-xs-6.col-xs-offset-3
+                    .panel.panel-primary
+                        .panel-heading
+                            h5 Game Controls
+                        .panel-body
+                            form.form(ng-submit='vm.onGameStartSumbit()')
+                                .form-group
+                                    | Time to start
+                                    select.form-control(ng-model='vm.startForm.start')
+                                        option(value='30') 30 seconds
+                                        option(value='60') 1 minute
+                                        option(value='120') 2 minutes
+                                        option(value='300') 5 minutes
+                                .form-group
+                                    | Auto Restart?
+                                    imput(type='checkbox', ng-model='vm.startForm.restart')
+                                .form-group
+                                    | Delay
+                                    select.form-control(ng-model='vm.startForm.restartDelay')
+                                        option(value='30') 30 seconds
+                                        option(value='60') 1 minute
+                                .pull-right
+                                    input.btn.btn-primary(type='submit', value='Start')
+                                .clearfix
+                            hr
+                            .pull-right
+                                button.btn.btn-primary(value='Stop', ng-click='vm.onGameStopClick()') Stop
+            .row(ng-if='vm.state === "disconnected"')
+                .col-xs-6.col-xs-offset-3
+                    h1 No Connection
+
+        // build:js ./scripts/libs.js
+        script(src='/bower_components/angular/angular.js')
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/momentjs/moment.js')
+        script(src='/socket.io/socket.io.js')
+        // endbuild
+        // build:js ./scripts/app.js
+        script(src='/js/common/service/logsvc.js')
+        script(src='/js/admin/main.js')
+        script(src='/js/admin/service/AdminSvc.js')
+        script(src='/js/admin/controller/AdminCtrl.js')
+        // endbuild
+

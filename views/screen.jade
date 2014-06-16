@@ -1,0 +1,41 @@
+doctype html
+html(ng-app='Screen')
+    head
+        title Recognition game screen
+        // build:css ./style/main.css
+        link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='styles/main.css')
+        // endbuild
+    body#screen.main(timed-cls, ng-controller='ScreenCtrl')
+        .container-fluid
+            .row
+                .col-xs-3
+                    .leaderboard
+                        table.table.table-condensed
+                            thead
+                                th Player
+                                th Score
+                            tbody(ng-repeat='score in vm.leaderboard')
+                                td {{ score.name }}
+                                td {{ score.score }}
+                img.game-image.col-xs-2.col-xs-offset-1(ng-src='/images/questions/{{vm.question.image}}', ng-if='vm.state === "started"')
+                .countdown.col-xs-8.text-center(ng-if='vm.state === "starting"')
+                    h1
+                        | Game starting in about {{ vm.countdowntime }}!
+                        br
+                        | Join http://blah/ to join in!
+
+
+        // build:js ./scripts/libs.js
+        script(src='/bower_components/angular/angular.js')
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/momentjs/moment.js')
+        script(src='/socket.io/socket.io.js')
+        // endbuild
+        // build:js ./scripts/app.js
+        script(src='/js/common/service/logsvc.js')
+        script(src='/js/screen/main.js')
+        script(src='/js/screen/service/screensvc.js')
+        script(src='/js/screen/controller/screenctrl.js')
+        // endbuild
+

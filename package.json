@@ -1,0 +1,23 @@
+{
+  "name": "rewindfx-recognition-game",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.3.2",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.1.0",
+    "cookie-parser": "~1.1.0",
+    "body-parser": "~1.2.0",
+    "debug": "~0.8.1",
+    "jade": "~1.3.0",
+    "less-middleware": "1.0.x",
+    "twit": "~1.1.15",
+    "socket.io": "~1.0.2",
+    "node-python": "0.0.4",
+    "q": "~1.0.1",
+    "underscore": "~1.6.0"
+  }
+}

@@ -1,0 +1,12 @@
+doctype html
+html(ng-app='VendingMachine')
+    head
+        title Twitter Vending Machine
+        // build:css ./style/main.css
+        link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='css/main.css')
+        // endbuild
+    body(timed-cls)
+        h1= message
+        h2= error.status
+        pre #{error.stack}
