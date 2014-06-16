@@ -9,17 +9,16 @@ html(ng-app='Screen')
     body#screen.main(timed-cls, ng-controller='ScreenCtrl')
         .container-fluid
             .row
-                .col-xs-3
-                    .leaderboard
-                        table.table.table-condensed
-                            thead
-                                th Player
-                                th Score
-                            tbody(ng-repeat='score in vm.leaderboard')
-                                td {{ score.name }}
-                                td {{ score.score }}
-                .col-xs-2.col-xs-offset-1(ng-if='vm.state === "started"')
-                    img.game-image(ng-src='/images/questions/{{vm.question.image}}')
+                .col-xs-3.leaderboard
+                    table.table.table-condensed
+                        thead
+                            th Player
+                            th Score
+                        tbody(ng-repeat='score in vm.leaderboard')
+                            td {{ score.name }}
+                            td {{ score.score }}
+                .col-xs-offset-3.col-xs-3(ng-if='vm.state === "started"')
+                    img.img-responsive.game-image(ng-src='/images/questions/{{vm.question.image}}')
                 .countdown.col-xs-8.text-center(ng-if='vm.state === "starting"')
                     h1
                         | Game starting in about {{ vm.countdowntime }}!
