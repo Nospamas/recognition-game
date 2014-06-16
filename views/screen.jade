@@ -3,8 +3,8 @@ html(ng-app='Screen')
     head
         title Recognition game screen
         // build:css ./style/main.css
-        link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
-        link(rel='stylesheet', href='styles/main.css')
+        link(rel='stylesheet', href='/public/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/styles/main.css')
         // endbuild
     body#screen.main(timed-cls, ng-controller='ScreenCtrl')
         .container-fluid
@@ -27,15 +27,15 @@ html(ng-app='Screen')
 
 
         // build:js ./scripts/libs.js
-        script(src='/bower_components/angular/angular.js')
-        script(src='/bower_components/jquery/dist/jquery.js')
-        script(src='/bower_components/momentjs/moment.js')
-        script(src='/socket.io/socket.io.js')
+        script(src='/public/bower_components/angular/angular.js')
+        script(src='/public/bower_components/jquery/dist/jquery.js')
+        script(src='/public/bower_components/momentjs/moment.js')
+        script(src='/public/socket.io/socket.io.js')
         // endbuild
         // build:js ./scripts/app.js
-        script(src='/js/common/service/logsvc.js')
-        script(src='/js/screen/main.js')
-        script(src='/js/screen/service/screensvc.js')
-        script(src='/js/screen/controller/screenctrl.js')
+        script(src='/public/js/common/service/logsvc.js')
+        script(src='/public/js/screen/main.js')
+        script(src='/public/js/screen/service/screensvc.js')
+        script(src='/public/js/screen/controller/screenctrl.js')
         // endbuild
 

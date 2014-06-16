@@ -3,8 +3,8 @@ html(ng-app='Admin')
     head
         title Admin Page
         // build:css ./style/main.css
-        link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
-        link(rel='stylesheet', href='styles/main.css')
+        link(rel='stylesheet', href='/public/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/styles/main.css')
         // endbuild
     body#admin.main(ng-controller='AdminCtrl')
         .container
@@ -54,15 +54,15 @@ html(ng-app='Admin')
                     h1 No Connection
 
         // build:js ./scripts/libs.js
-        script(src='/bower_components/angular/angular.js')
-        script(src='/bower_components/jquery/dist/jquery.js')
-        script(src='/bower_components/momentjs/moment.js')
-        script(src='/socket.io/socket.io.js')
+        script(src='/public/bower_components/angular/angular.js')
+        script(src='/public/bower_components/jquery/dist/jquery.js')
+        script(src='/public/bower_components/momentjs/moment.js')
+        script(src='/public/socket.io/socket.io.js')
         // endbuild
         // build:js ./scripts/app.js
-        script(src='/js/common/service/logsvc.js')
-        script(src='/js/admin/main.js')
-        script(src='/js/admin/service/AdminSvc.js')
-        script(src='/js/admin/controller/AdminCtrl.js')
+        script(src='/public/js/common/service/logsvc.js')
+        script(src='/public/js/admin/main.js')
+        script(src='/public/js/admin/service/AdminSvc.js')
+        script(src='/public/js/admin/controller/AdminCtrl.js')
         // endbuild
 

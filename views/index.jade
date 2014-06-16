@@ -3,8 +3,8 @@ html(ng-app='Player')
     head
         title Recognition game player
         // build:css ./style/main.css
-        link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
-        link(rel='stylesheet', href='styles/main.css')
+        link(rel='stylesheet', href='/public/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/styles/main.css')
         // endbuild
     body#player.main(timed-cls, ng-controller='PlayerCtrl')
         .container
@@ -43,14 +43,14 @@ html(ng-app='Player')
                         | You have been disconnected :(
 
         // build:js ./scripts/libs.js
-        script(src='/bower_components/angular/angular.js')
-        script(src='/bower_components/jquery/dist/jquery.js')
-        script(src='/bower_components/momentjs/moment.js')
-        script(src='/socket.io/socket.io.js')
+        script(src='/public/bower_components/angular/angular.js')
+        script(src='/public/bower_components/jquery/dist/jquery.js')
+        script(src='/public/bower_components/momentjs/moment.js')
+        script(src='/public/socket.io/socket.io.js')
         // endbuild
         // build:js ./scripts/app.js
-        script(src='/js/common/service/logsvc.js')
-        script(src='/js/player/main.js')
-        script(src='/js/player/service/playersvc.js')
-        script(src='/js/player/controller/playerctrl.js')
+        script(src='/public/js/common/service/logsvc.js')
+        script(src='/public/js/player/main.js')
+        script(src='/public/js/player/service/playersvc.js')
+        script(src='/public/js/player/controller/playerctrl.js')
         // endbuild
