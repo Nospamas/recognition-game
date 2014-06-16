@@ -10,7 +10,7 @@ html(ng-app='Player')
         .container
             .row
                 .col-xs-12
-                    img.center-block.img-responsive(src='/images/backgrounds/gutterlogo.jpg')
+                    img.center-block.img-responsive(src='/public/images/backgrounds/gutterlogo.jpg')
             .row(ng-if='vm.state === "awaitingname"')
                     form.form(ng-submit='vm.onPlayerSubmit()')
                         .col-xs-12
@@ -46,11 +46,11 @@ html(ng-app='Player')
         script(src='/public/bower_components/angular/angular.js')
         script(src='/public/bower_components/jquery/dist/jquery.js')
         script(src='/public/bower_components/momentjs/moment.js')
-        script(src='/public/socket.io/socket.io.js')
+        script(src='/socket.io/socket.io.js')
         // endbuild
         // build:js ./scripts/app.js
-        script(src='/public/js/common/service/logsvc.js')
+        script(src='/public/js/common/service/LogSvc.js')
         script(src='/public/js/player/main.js')
-        script(src='/public/js/player/service/playersvc.js')
-        script(src='/public/js/player/controller/playerctrl.js')
+        script(src='/public/js/player/service/PlayerSvc.js')
+        script(src='/public/js/player/controller/PlayerCtrl.js')
         // endbuild
