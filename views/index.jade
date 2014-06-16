@@ -3,14 +3,14 @@ html(ng-app='Player')
     head
         title Recognition game player
         // build:css ./style/main.css
-        link(rel='stylesheet', href='/public/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
         link(rel='stylesheet', href='/styles/main.css')
         // endbuild
     body#player.main(timed-cls, ng-controller='PlayerCtrl')
         .container
             .row
                 .col-xs-12
-                    img.center-block.img-responsive(src='/public/images/backgrounds/gutterlogo.jpg')
+                    img.center-block.img-responsive(src='/images/backgrounds/gutterlogo.jpg')
             .row(ng-if='vm.state === "awaitingname"')
                     form.form(ng-submit='vm.onPlayerSubmit()')
                         .col-xs-12
@@ -43,14 +43,14 @@ html(ng-app='Player')
                         | You have been disconnected :(
 
         // build:js ./scripts/libs.js
-        script(src='/public/bower_components/angular/angular.js')
-        script(src='/public/bower_components/jquery/dist/jquery.js')
-        script(src='/public/bower_components/momentjs/moment.js')
+        script(src='/bower_components/angular/angular.js')
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/momentjs/moment.js')
         script(src='/socket.io/socket.io.js')
         // endbuild
         // build:js ./scripts/app.js
-        script(src='/public/js/common/service/LogSvc.js')
-        script(src='/public/js/player/main.js')
-        script(src='/public/js/player/service/PlayerSvc.js')
-        script(src='/public/js/player/controller/PlayerCtrl.js')
+        script(src='/js/common/service/LogSvc.js')
+        script(src='/js/player/main.js')
+        script(src='/js/player/service/PlayerSvc.js')
+        script(src='/js/player/controller/PlayerCtrl.js')
         // endbuild
