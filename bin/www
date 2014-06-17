@@ -15,6 +15,8 @@ var adminSockets = require('../service/adminSockets')(logSvc, io, game);
 var screenSockets = require('../service/screenSockets')(logSvc, io, game);
 var playerSockets = require('../service/playerSockets')(logSvc, io, game);
 
+game.start();
+
 server.listen(app.get('port'), function () {
     debug('Express server listening on port ' + server.address().port);
 });

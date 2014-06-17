@@ -33,13 +33,20 @@ module.exports = function (log) {
 
     var self = this;
 
+    var gamestates = {
+        'stopped': 'stopped',
+        'countingdown': 'countingdown',
+        'game': 'game'
+    };
+
+    var gamestate = gamestates.stopped;
     var players = {};
     var countDownBigTick = 5000;
     var countDownSmallTick = 1000;
     var stopGame = false;
     var amountOfGuesses = 4;
-    var questionsPerGame = 12;
-    var answerTime = 5000;
+    var questionsPerGame = 8;
+    var answerTime = 10000;
     var minScoreForCorrect = 5000;
     var overallLeaderBoard = [];
     // total game time = questions per game * answerTime;
@@ -57,6 +64,7 @@ module.exports = function (log) {
     // core game loop
     var doCountdown = function doCountdown(countdown, deferred) {
         deferred = deferred || q.defer();
+        gamestate = gamestates.countingdown;
 
         log.log('CountDownTick: ' + countdown);
 
@@ -138,16 +146,17 @@ module.exports = function (log) {
 
             self.notifyObservers('gameend', [generateLeaderBoard()]);
 
+            gamestate = gamestates.stopped;
             if (autoRestart !== false && !stopGame) {
                 self.start(autoRestart, autoRestart);
             }
-
-            stopGame = false;
         }
     };
 
     var game = function () {
         var deferred = q.defer();
+        var gameQuestions;
+        gamestate = gamestates.game;
         var generateGuesses = function (answer, correctIndex) {
             var allGuesses = _.uniq(_.map(allAnswers, function (answerObj) {
                 return answerObj.name;
@@ -203,6 +212,9 @@ module.exports = function (log) {
             var currentAnswer;
             var questionIndex;
 
+            // return the top 10
+            self.notifyObservers('gameleaderboard', [_.first(generateLeaderBoard(), 5)]);
+
             if (currentGame.questionsAsked.length >= questionsPerGame) {
                 // end game
                 deferred.resolve(true);
@@ -218,9 +230,6 @@ module.exports = function (log) {
                         questionIndex: questionIndex
                     }
                 ]);
-
-                // return the top 10
-                self.notifyObservers('gameleaderboard', [_.first(generateLeaderBoard(), 10)]);
 
                 setTimeout(gameLoop, answerTime);
             }
@@ -254,7 +263,14 @@ module.exports = function (log) {
     };
 
     this.start = function (countdown, autoRestart) {
+        stopGame = false;
 
+        countdown = countdown || 30000;
+        autoRestart = autoRestart || 30000;
+
+        if (gamestate !== gamestates.stopped) {
+            return;
+        }
         // round countdown up to nearest 5000ms
         var roundedCountdown = 5000 * Math.ceil(countdown / 5000);
         // default autorestart to 30000

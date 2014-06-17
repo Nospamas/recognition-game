@@ -2,8 +2,6 @@
 module.exports = function (log, io, game) {
     var sockets = io.of('/socketscreen')
         .on('connection', function (socket) {
-
-
         });
 
     game.on('gamestarting', function () {

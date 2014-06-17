@@ -17,8 +17,11 @@ html(ng-app='Screen')
                         tbody(ng-repeat='score in vm.leaderboard')
                             td {{ score.name }}
                             td {{ score.score }}
-                .col-xs-offset-3.col-xs-3(ng-if='vm.state === "started"')
-                    img.img-responsive.game-image(ng-src='/images/questions/{{vm.question.image}}')
+                .game-screen(ng-if='vm.state === "started"')
+                    .col-xs-offset-2.col-xs-3
+                        img.img-responsive.game-image(ng-src='/images/questions/{{vm.question.image}}')
+                    .col-xs-offset-1.col-xs-2.buttons
+                        a.btn.btn-default.btn-lg(href='', ng-repeat='guess in vm.question.guesses') {{ guess }}
                 .countdown.col-xs-8.text-center(ng-if='vm.state === "starting"')
                     h1
                         | Game starting in about {{ vm.countdowntime }}!
