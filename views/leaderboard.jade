@@ -1,0 +1,50 @@
+doctype html
+html(ng-app='Leaderboard')
+    head
+        title Recognition game player
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        // build:css ./style/main.css
+        link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/styles/main.css')
+        // endbuild
+    body#leaderboard.main(ng-controller='LeaderboardCtrl')
+        .container
+            .row
+                .col-xs-12
+                    img.img-responsive.center-block(src='/images/backgrounds/gutterlogo.jpg')
+            .row
+                .col-xs-12
+                    h1 Leaderboard
+            .row
+                .col-xs-12.game-leaderboard
+                    h4 Top 10 Current game
+                    table.table.table-condensed.table-striped.table-responsive
+                        thead
+                            th Player
+                            th Score
+                        tbody(ng-repeat='score in vm.leaderboard')
+                            td {{ score.name }}
+                            td {{ score.score }}
+            .row
+                .col-xs-12.overall-leaderboard
+                    h4 Top 50 All Time
+                    table.table.table-condensed.table-striped.table-responsive
+                        thead
+                            th Player
+                            th Score
+                        tbody(ng-repeat='score in vm.overallleaderboard')
+                            td {{ score.name }}
+                            td {{ score.score }}
+
+        // build:js ./scripts/libs.js
+        script(src='/bower_components/angular/angular.js')
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src='/bower_components/momentjs/moment.js')
+        script(src='/socket.io/socket.io.js')
+        // endbuild
+        // build:js ./scripts/app.js
+        script(src='/js/common/service/LogSvc.js')
+        script(src='/js/leaderboard/main.js')
+        script(src='/js/leaderboard/service/LeaderboardSvc.js')
+        script(src='/js/leaderboard/controller/LeaderboardCtrl.js')
+        // endbuild

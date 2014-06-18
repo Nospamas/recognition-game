@@ -42,6 +42,7 @@ html(ng-app='Player')
                 .col-xs-12.text-center
                     h4 {{ vm.playerName }} your score for this game was:
                     h1 {{ vm.lastscore}}
+                    h4 Check out the #[a(href='/leaderboard') Best Scores!]
             .row(ng-if='vm.state === "disconnected"')
                 .col-xs-12
                     h1.text-center

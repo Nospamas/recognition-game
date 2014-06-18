@@ -137,6 +137,10 @@ module.exports = function (log) {
 
     var updateOverallLeaderBoard = function () {
         overallLeaderBoard = overallLeaderBoard.concat(generateLeaderBoard());
+        // TODO: truncate to top 50 all time?
+        overallLeaderBoard = _.first(_.sortBy(overallLeaderBoard, function (scoreObj) {
+            return scoreObj.score;
+        }).reverse(), 50);
         self.notifyObservers('overallleaderboard', [overallLeaderBoard]);
     };
 
@@ -212,8 +216,8 @@ module.exports = function (log) {
             var currentAnswer;
             var questionIndex;
 
-            // return the top 10
-            self.notifyObservers('gameleaderboard', [_.first(generateLeaderBoard(), 5)]);
+            currentGame.gameLeaderBoard = generateLeaderBoard();
+            self.notifyObservers('gameleaderboard', [_.first(currentGame.gameLeaderBoard, 5)]);
 
             if (currentGame.questionsAsked.length >= questionsPerGame) {
                 // end game
@@ -294,6 +298,18 @@ module.exports = function (log) {
 
     this.stop = function () {
         stopGame = true;
+    };
+
+    this.getLeaderBoard = function () {
+        if (!currentGame || !currentGame.gameLeaderBoard) {
+            return [];
+        }
+
+        return _.first(currentGame.gameLeaderBoard, 10);
+    };
+
+    this.getOverallLeaderBoard = function () {
+        return _.first(overallLeaderBoard, 50);
     };
 
     // listener registration & call

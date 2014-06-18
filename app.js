@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var indexRoute = require('./routes/index');
 var adminRoute = require('./routes/admin');
 var screenRoute = require('./routes/screen');
+var leaderboardRoute = require('./routes/leaderboard');
 
 var app = express();
 // view engine setup
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRoute);
 app.use('/admin', adminRoute);
 app.use('/screen', screenRoute);
+app.use('/leaderboard', leaderboardRoute);
 
 /// catch 404 and forward to error handler
 app.use(function (req, res, next) {

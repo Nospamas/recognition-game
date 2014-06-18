@@ -264,7 +264,7 @@ module.exports = [
         image: 'QUAKERS.jpg'
     },
     {
-        name: 'Ray',
+        name: 'Ray Ban',
         image: 'RAY.jpg'
     },
     {
@@ -292,7 +292,7 @@ module.exports = [
         image: 'STRONGB.jpg'
     },
     {
-        name: 'Tiff',
+        name: 'Tiffany & Co.',
         image: 'TIFF.jpg'
     },
     {
