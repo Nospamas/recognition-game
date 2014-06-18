@@ -23,7 +23,8 @@ angular.module('Player').controller('PlayerCtrl',
                 countdowntime: 0,
                 question: null,
                 allowGuesses: true,
-                lastscore: 0
+                lastscore: 0,
+                selectedAnswer: null
             };
 
             vm.onPlayerSubmit = function () {
@@ -41,6 +42,7 @@ angular.module('Player').controller('PlayerCtrl',
             vm.onAnswerSelect = function (questionId, answerId) {
                 LogSvc.log("Selecting Answer");
                 vm.allowGuesses = false;
+                vm.selectedAnswer = answerId;
                 PlayerSvc.sendAnswer(questionId, answerId);
             };
 
@@ -87,6 +89,7 @@ angular.module('Player').controller('PlayerCtrl',
                         vm.state = states.started;
                         vm.allowGuesses = true;
                         vm.question = question;
+                        vm.selectedAnswer = null;
                     }
                 });
             });

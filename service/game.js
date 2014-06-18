@@ -45,9 +45,9 @@ module.exports = function (log) {
     var countDownSmallTick = 1000;
     var stopGame = false;
     var amountOfGuesses = 4;
-    var questionsPerGame = 8;
-    var answerTime = 10000;
-    var minScoreForCorrect = 5000;
+    var questionsPerGame = 12;
+    var answerTime = 5000;
+    var minScoreForCorrect = 5;
     var overallLeaderBoard = [];
     // total game time = questions per game * answerTime;
     var currentGame = null;
@@ -101,7 +101,7 @@ module.exports = function (log) {
 
 
     var calculateScore = function (askedTimestamp, answerTimestamp) {
-        var timestampscore = answerTime + (askedTimestamp - answerTimestamp);
+        var timestampscore = Math.ceil((answerTime + (askedTimestamp - answerTimestamp)) / 1000);
         return minScoreForCorrect + Math.max(0, timestampscore);
     };
 

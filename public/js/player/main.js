@@ -1,5 +1,8 @@
 angular.module('Player', ['Common'])
-    .run(['PlayerSvc',
-        function (PlayerSvc) {
+    .run(['$window', 'PlayerSvc',
+        function ($window, PlayerSvc) {
             PlayerSvc.init();
+
+            // Fixes click delay on touch devices by making them use touch events instead of click events
+            $window.FastClick.attach($window.document.body);
         }]);

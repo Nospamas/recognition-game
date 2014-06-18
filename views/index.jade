@@ -2,23 +2,24 @@ doctype html
 html(ng-app='Player')
     head
         title Recognition game player
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
         // build:css ./style/main.css
         link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
         link(rel='stylesheet', href='/styles/main.css')
         // endbuild
-    body#player.main(timed-cls, ng-controller='PlayerCtrl')
+    body#player.main(ng-controller='PlayerCtrl')
         .container
             .row
-                .col-xs-offset-3.col-xs-6
-                    img.center-block.img-responsive(src='/images/backgrounds/gutterlogo.jpg')
+                .col-xs-12
+                    img.img-responsive.center-block(src='/images/backgrounds/gutterlogo.jpg')
             .row(ng-if='vm.state === "awaitingname"')
+                .col-xs-12
                     form.form(ng-submit='vm.onPlayerSubmit()')
-                        .col-xs-12
-                            h4.text-center To play, enter your initials below for the leaderboard. Try to recognise the images shown on the big screen and select an answer!
-                        .form-group.text-center.col-xs-12
-                            input.form-control.initials-entry.col-xs-12(type='text', ng-model='vm.form.name', maxlength=3, required, autofocus)
-                        .form-group.col-xs-12
-                            input.btn.btn-primary.pull-right.play-button(type='submit', value='Play!')
+                        h4.text-center To play, enter your initials below for the leaderboard. Try to recognise the images shown on the big screen and select an answer!
+                        .form-group.text-center
+                            input.form-control.initials-entry(type='text', ng-model='vm.form.name', maxlength=3, required, autofocus)
+                        .form-group
+                            input.btn.btn-primary.btn-lg.pull-right.play-button(type='submit', value='Play!')
             .row(ng-if='vm.state === "ready"')
                 .col-xs-12.text-center
                     h1
@@ -32,7 +33,11 @@ html(ng-app='Player')
                     h1.text-center
                         | Choose!
                     .buttons(ng-repeat='guess in vm.question.guesses')
-                        a.btn.btn-default.btn-lg.col-xs-12(href='', ng-disabled='!vm.allowGuesses', ng-click='vm.onAnswerSelect(vm.question.questionIndex, $index)') {{ guess }}
+                        a.btn.btn-lg.btn-block.answer-button(
+                        href='',
+                        ng-disabled='!vm.allowGuesses',
+                        ng-click='vm.onAnswerSelect(vm.question.questionIndex, $index)',
+                        ng-class='{ "btn-default": vm.selectedAnswer !== $index, "btn-primary": vm.selectedAnswer === $index }') {{ guess }}
             .row(ng-if='vm.state === "finalscore"')
                 .col-xs-12.text-center
                     h4 {{ vm.playerName }} your score for this game was:
@@ -49,6 +54,7 @@ html(ng-app='Player')
         script(src='/socket.io/socket.io.js')
         // endbuild
         // build:js ./scripts/app.js
+        script(src='/js/fastclick.js')
         script(src='/js/common/service/LogSvc.js')
         script(src='/js/player/main.js')
         script(src='/js/player/service/PlayerSvc.js')
