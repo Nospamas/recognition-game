@@ -5,6 +5,7 @@ module.exports = function (log, io, game) {
             var playerId = null;
 
             socket.on('registerplayer', function (name, fn) {
+
                 playerId = game.addPlayer({ name: name });
                 fn(playerId);
             });

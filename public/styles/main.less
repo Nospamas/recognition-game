@@ -1,34 +1,70 @@
-@logo-light-blue: #E5FBFF;
+@main-background-color: #FFFFFF;
 
 .main {
-  background-color: @logo-light-blue;
+  background-color: @main-background-color;
 }
 
 #screen {
-  background-image: url('/images/backgrounds/Welcometothegutterwithcat-background.jpg');
+  background-image: url('/images/backgrounds/gutterbackfull.jpg');
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 100%;
 
   .game-image {
-    margin-top: 1vw;
-    border: 2px solid black;
+    position: absolute;
+    top: 5vw;
+    left: 42vw;
+
+    width: 20vw;
+
+    img {
+      border: 2px solid black;
+    }
   }
 
   .leaderboard {
-    padding-top: 8vw;
-    padding-left: 6vw;
+    position: absolute;
+
+    top: 8vw;
+    left: 4vw;
+
+    width: 22vw;
+
+    font-size: 1.5em;
   }
+
   .countdown {
-    padding-top: 8vw;
+    position: absolute;
+
+    color: white;
+
+    top: 7vw;
+    left: 36vw;
+
+    width: 62vw;
   }
 
   .buttons {
-    padding-top: 5vw;
-    .btn {
-      width: 100%;
-    }
+    position: absolute;
+
+    top: 7vw;
+    left: 75vw;
+
+    width: 15vw;
+
   }
+
+  .top-text {
+    position: absolute;
+
+    color: white;
+
+    top: 0.5vw;
+    left: 36vw;
+
+    width: 66vw;
+  }
+
 }
 
 #player {

@@ -7,26 +7,27 @@ html(ng-app='Screen')
         link(rel='stylesheet', href='/styles/main.css')
         // endbuild
     body#screen.main(timed-cls, ng-controller='ScreenCtrl')
-        .container-fluid
-            .row
-                .col-xs-3.leaderboard
-                    table.table.table-condensed
-                        thead
-                            th Player
-                            th Score
-                        tbody(ng-repeat='score in vm.leaderboard')
-                            td {{ score.name }}
-                            td {{ score.score }}
-                .game-screen(ng-if='vm.state === "started"')
-                    .col-xs-offset-2.col-xs-3
-                        img.img-responsive.game-image(ng-src='/images/questions/{{vm.question.image}}')
-                    .col-xs-offset-1.col-xs-2.buttons
-                        a.btn.btn-default.btn-lg(href='', ng-repeat='guess in vm.question.guesses') {{ guess }}
-                .countdown.col-xs-8.text-center(ng-if='vm.state === "starting"')
-                    h1
-                        | Game starting in about {{ vm.countdowntime }}!
-                        br
-                        | Join http://gutterbar.com/ to join in!
+        .leaderboard
+            table.table.table-condensed
+                thead
+                    th Player
+                    th Score
+                tbody(ng-repeat='score in vm.leaderboard')
+                    td {{ score.name }}
+                    td {{ score.score }}
+        .game-screen(ng-if='vm.state === "started"')
+            .game-image
+                img.img-responsive(ng-src='/images/questions/{{vm.question.image}}')
+            .buttons
+                a.btn.btn-default.btn-lg.btn-block(href='', ng-repeat='guess in vm.question.guesses') {{ guess }}
+        .countdown.text-center(ng-if='vm.state === "starting"')
+            h1
+                | Game starting in {{ vm.countdowntime }}!
+                br
+                | Join #[em gutterbar.com] to join in!
+        .top-text
+            h4
+                | Havas Café  – The Gutter Bar Game
 
 
         // build:js ./scripts/libs.js
