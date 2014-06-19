@@ -11,12 +11,19 @@
 #screen {
   height: 100%;
   font-size: 100%;
+
   .screen-container {
-    position: relative;
     background-image: url('/images/backgrounds/gutterbackfull.jpg');
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 100%;
+
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  .dummy {
+    margin-top: 28.571%;
   }
 
   .game-image {
@@ -34,8 +41,8 @@
   .leaderboard {
     position: absolute;
 
-    top: 8%;
-    left: 4%;
+    top: 23%;
+    left: 5%;
 
     width: 22%;
 
@@ -61,6 +68,11 @@
 
     width: 15%;
 
+    .btn {
+      padding: 3%;
+      margin: 0;
+    }
+
   }
 
   .top-text {
@@ -68,10 +80,15 @@
 
     color: white;
 
-    top: 0.5%;
+    top: 0.3%;
     left: 36%;
 
     width: 63%;
+
+    font-size: 1em;
+
+    h4 {
+    }
   }
 
 }

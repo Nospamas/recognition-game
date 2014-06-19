@@ -7,32 +7,34 @@ html(ng-app='Screen')
         link(rel='stylesheet', href='/styles/main.css')
         // endbuild
     body#screen.main(timed-cls, ng-controller='ScreenCtrl')
-        .leaderboard
-            table.table.table-condensed
-                thead
-                    th Player
-                    th Score
-                tbody(ng-repeat='score in vm.leaderboard')
-                    td {{ score.name }}
-                    td {{ score.score }}
-        .game-screen(ng-if='vm.state === "started"')
-            .game-image
-                img.img-responsive(ng-src='/images/questions/{{vm.question.image}}')
-            .buttons
-                a.btn.btn-default.btn-lg.btn-block(href='', ng-repeat='guess in vm.question.guesses') {{ guess }}
-        .countdown.text-center(ng-if='vm.state === "starting"')
-            h1
-                | Game starting in {{ vm.countdowntime }}!
-                br
-                | Join #[em gutterbar.com] to join in!
-        .top-text
-            carousel
-                slide
-                    h4 Havas Café  – The Gutter Bar Game
-                //slide
-                //    h4 Havas Café - Quick fire guess the brand
-                //slide
-                //    h4 Havas Café - Play against each other to win
+        .screen-container
+            .dummy
+            .leaderboard
+                table.table.table-condensed
+                    thead
+                        th Player
+                        th Score
+                    tbody(ng-repeat='score in vm.leaderboard')
+                        td {{ score.name }}
+                        td {{ score.score }}
+            .game-screen(ng-if='vm.state === "started"')
+                .game-image
+                    img.img-responsive(ng-src='/images/questions/{{vm.question.image}}')
+                .buttons
+                    a.btn.btn-default.btn-lg.btn-block(href='', ng-repeat='guess in vm.question.guesses') {{ guess }}
+            .countdown.text-center(ng-if='vm.state === "starting"')
+                h1
+                    | Game starting in {{ vm.countdowntime }}!
+                    br
+                    | Join #[em gutterbar.com] to join in!
+            .top-text
+                carousel
+                    slide
+                        h4 Havas Café  – The Gutter Bar Game
+                    //slide
+                    //    h4 Havas Café - Quick fire guess the brand
+                    //slide
+                    //    h4 Havas Café - Play against each other to win
 
 
         // build:js ./scripts/libs.js
