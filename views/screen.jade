@@ -10,11 +10,30 @@ html(ng-app='Screen')
         .leaderboard
             table.table.table-condensed
                 thead
-                    th Player
-                    th Score
-                tbody(ng-repeat='score in vm.leaderboard')
-                    td {{ score.name }}
-                    td {{ score.score }}
+                    tr
+                        th Player
+                        th Score
+                //-tbody
+                //-    tr
+                //-        td JES
+                //-        td 1000
+                //-    tr
+                //-        td JES
+                //-        td 1000
+                //-    tr
+                //-        td JES
+                //-        td 1000
+                //-    tr
+                //-        td JES
+                //-        td 1000
+                //-    tr
+                //-        td JES
+                //-        td 1000
+
+                tbody
+                    tr(ng-repeat='score in vm.leaderboard')
+                        td {{ score.name }}
+                        td {{ score.score }}
         .game-screen(ng-if='vm.state === "started"')
             .game-image
                 img.img-responsive(ng-src='/images/questions/{{vm.question.image}}')
