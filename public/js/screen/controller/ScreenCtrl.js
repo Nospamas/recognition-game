@@ -46,12 +46,13 @@ angular.module('Screen').controller('ScreenCtrl',
             ScreenSvc.on('countdowntick', function (time) {
                 LogSvc.log('countdown tick called');
                 $scope.$apply(function () {
+                    vm.state = states.starting;
                     vm.countdowntime = time / 1000;
 
                     if (time === 15000 && audioAvailable) {
                         try {
                             setTimeout(function () {
-                                voiceOver.play
+                                voiceOver.play();
                             }, 4000);
                         } catch (err) {}
                     }
