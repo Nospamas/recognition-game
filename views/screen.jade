@@ -26,8 +26,13 @@ html(ng-app='Screen')
                 br
                 | Join #[em gutterbar.com] to join in!
         .top-text
-            h4
-                | Havas Café  – The Gutter Bar Game
+            carousel
+                slide
+                    h4 Havas Café  – The Gutter Bar Game
+                //slide
+                //    h4 Havas Café - Quick fire guess the brand
+                //slide
+                //    h4 Havas Café - Play against each other to win
 
 
         // build:js ./scripts/libs.js
@@ -40,6 +45,7 @@ html(ng-app='Screen')
         script(src='/js/common/service/LogSvc.js')
         script(src='/js/screen/main.js')
         script(src='/js/screen/service/ScreenSvc.js')
+        script(src='/js/screen/service/QuerySvc.js')
         script(src='/js/screen/controller/ScreenCtrl.js')
         // endbuild
 

@@ -1,8 +1,8 @@
 // Controller to allow display of items to page.
 
 angular.module('Screen').controller('ScreenCtrl',
-    ['$scope', 'LogSvc', 'ScreenSvc',
-        function ($scope, LogSvc, ScreenSvc) {
+    ['$scope', 'LogSvc', 'ScreenSvc', 'QuerySvc',
+        function ($scope, LogSvc, ScreenSvc, QuerySvc) {
 
             var states = {
                 ready: 'ready',
@@ -10,11 +10,18 @@ angular.module('Screen').controller('ScreenCtrl',
                 started: 'started'
             };
 
+            var queryStringObj = QuerySvc.getQueryObject();
+
             var vm = {
                 countdowntime: 0,
                 question: null,
-                leaderboard: null
+                leaderboard: null,
+                screenWidth: '100%'
             };
+
+            if (QuerySvc.width) {
+                vm.screenWidth = QuerySvc.width + 'px'
+            }
 
 
             ScreenSvc.on('gamestarting', function () {
