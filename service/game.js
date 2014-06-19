@@ -231,7 +231,8 @@ module.exports = function (log) {
                     {
                         guesses: currentAnswer.guesses,
                         image: currentAnswer.image,
-                        questionIndex: questionIndex
+                        questionIndex: questionIndex,
+                        questionsPerGame: questionsPerGame
                     }
                 ]);
 

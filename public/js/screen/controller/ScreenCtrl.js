@@ -1,8 +1,8 @@
 // Controller to allow display of items to page.
 
 angular.module('Screen').controller('ScreenCtrl',
-    ['$scope', 'LogSvc', 'ScreenSvc', 'QuerySvc',
-        function ($scope, LogSvc, ScreenSvc, QuerySvc) {
+    ['$scope', 'LogSvc', 'ScreenSvc',
+        function ($scope, LogSvc, ScreenSvc) {
 
             var states = {
                 ready: 'ready',
@@ -10,7 +10,16 @@ angular.module('Screen').controller('ScreenCtrl',
                 started: 'started'
             };
 
-            var queryStringObj = QuerySvc.getQueryObject();
+            var audioAvailable = false;
+            var countDown;
+            var voiceOver;
+
+            try  {
+                voiceOver = new Audio('/mp3/voiceover.mp3');
+                countDown = new Audio('/mp3/countdown.mp3');
+                audioAvailable = true;
+            } catch (err) {}
+
 
             var vm = {
                 countdowntime: 0,
@@ -18,10 +27,6 @@ angular.module('Screen').controller('ScreenCtrl',
                 leaderboard: null,
                 screenWidth: '100%'
             };
-
-            if (QuerySvc.width) {
-                vm.screenWidth = QuerySvc.width + 'px'
-            }
 
 
             ScreenSvc.on('gamestarting', function () {
@@ -43,6 +48,14 @@ angular.module('Screen').controller('ScreenCtrl',
                 $scope.$apply(function () {
                     vm.countdowntime = time / 1000;
 
+                    if (time === 15000 && audioAvailable) {
+                        try {
+                            setTimeout(function () {
+                                voiceOver.play
+                            }, 4000);
+                        } catch (err) {}
+                    }
+
                 });
             });
 
@@ -51,6 +64,10 @@ angular.module('Screen').controller('ScreenCtrl',
                 $scope.$apply(function () {
                     vm.state = states.started;
                     vm.question = question;
+
+                    if ((question.questionsPerGame - question.questionIndex) === 6) {
+                        countDown.play();
+                    }
                 });
             });
 
