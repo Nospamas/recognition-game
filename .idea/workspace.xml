@@ -2,48 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f2eb94a-82cc-45c1-9799-0bc2241a6c99" name="Default" comment="updated images and styles">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/0a774f59f54a341365b28f5871590487.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/1a7d3ae574395981782ab7d85ac4c2b5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/30071af19bcab11dcba4dde065e350a2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/33b5c30bfac8e026ce4327c4e4f68cbe.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/3d4a4cda8764b072f3f2b31cb532e48c.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/4173885a20cb9ed4e3400637fba37f8d.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/636dbb5a16bc7c90129c8a85cb2b6f7f.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/6cd01aa3c7f205d965f511cc27335cde.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/737cf686d1d6f45fd3309262c35b1d79.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/7c261561f6e32062d28f19faf8cc9bd2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/86a26e878f7009bbaabc79397d8a6850.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/86b044f2c97bef84524f0bb77ecada5f.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/886ab6308afccd849060e70bae49ea1c.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/896cc6840bf45ae010044083d3c1ad66.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/backgrounds/Spotify-Bus-Left.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/backgrounds/Spotify-Bus-right.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/backgrounds/Spotify_mobile-V2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/backgrounds/Spotify_mobile-V3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/bdeadbada0b79abea618790b148a038c.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/bf4637b7374821080f5495fd0dfc555c.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/c9a2c92d2487942c8dd42388d0765fef.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/cfd807a817fa535b4561d32abc593a68.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/d70eb2cf97a4f228ef96f60a4c2e58ff.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/e080e8b03e7b286262405810f921d05f.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/e4e8f7188e574afe1ae869b14c64a337.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/e874f3b6d90fd2c686f08e5c4a210566.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/ebfd07f5ba495017f5cbd0c95402bef8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/questions/f146fa5cc73203266ef23c822cbca537.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/backgrounds/spotify-bus-morescreen-v2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/backgrounds/spotify-bus2-morescreen-right.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/bower_components/angular-sanitize/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/bower_components/angular-sanitize/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/bower_components/angular-sanitize/angular-sanitize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/bower_components/angular-sanitize/angular-sanitize.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/bower_components/angular-sanitize/angular-sanitize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/bower_components/angular-sanitize/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/common/filter/newline.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/backgrounds/gutterandwall.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/backgrounds/gutterbackfull.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/backgrounds/gutterlogo-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/backgrounds/gutterlogo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/backgrounds/havaslogogame.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/questions/ANN-2.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/questions/ANN.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/questions/BEN.jpg" afterPath="" />
@@ -124,16 +82,32 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/questions/WEETABIX.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/questions/XBOX.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/questions/YELL.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/screen/controller/ScreenCtrl.js" afterPath="$PROJECT_DIR$/public/js/screen/controller/ScreenCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/error.jade" afterPath="$PROJECT_DIR$/views/error.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/images.js" afterPath="$PROJECT_DIR$/service/images.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/main.css" afterPath="$PROJECT_DIR$/public/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/screen/main.js" afterPath="$PROJECT_DIR$/public/js/screen/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/main.less" afterPath="$PROJECT_DIR$/public/styles/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/0a774f59f54a341365b28f5871590487.jpg" afterPath="$PROJECT_DIR$/public/images/questions/0a774f59f54a341365b28f5871590487.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/1a7d3ae574395981782ab7d85ac4c2b5.jpg" afterPath="$PROJECT_DIR$/public/images/questions/1a7d3ae574395981782ab7d85ac4c2b5.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/30071af19bcab11dcba4dde065e350a2.jpg" afterPath="$PROJECT_DIR$/public/images/questions/30071af19bcab11dcba4dde065e350a2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/33b5c30bfac8e026ce4327c4e4f68cbe.jpg" afterPath="$PROJECT_DIR$/public/images/questions/33b5c30bfac8e026ce4327c4e4f68cbe.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/3d4a4cda8764b072f3f2b31cb532e48c.jpg" afterPath="$PROJECT_DIR$/public/images/questions/3d4a4cda8764b072f3f2b31cb532e48c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/4173885a20cb9ed4e3400637fba37f8d.jpg" afterPath="$PROJECT_DIR$/public/images/questions/4173885a20cb9ed4e3400637fba37f8d.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/636dbb5a16bc7c90129c8a85cb2b6f7f.jpg" afterPath="$PROJECT_DIR$/public/images/questions/636dbb5a16bc7c90129c8a85cb2b6f7f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/6cd01aa3c7f205d965f511cc27335cde.jpg" afterPath="$PROJECT_DIR$/public/images/questions/6cd01aa3c7f205d965f511cc27335cde.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/737cf686d1d6f45fd3309262c35b1d79.jpg" afterPath="$PROJECT_DIR$/public/images/questions/737cf686d1d6f45fd3309262c35b1d79.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/7c261561f6e32062d28f19faf8cc9bd2.jpg" afterPath="$PROJECT_DIR$/public/images/questions/7c261561f6e32062d28f19faf8cc9bd2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/86a26e878f7009bbaabc79397d8a6850.jpg" afterPath="$PROJECT_DIR$/public/images/questions/86a26e878f7009bbaabc79397d8a6850.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/86b044f2c97bef84524f0bb77ecada5f.jpg" afterPath="$PROJECT_DIR$/public/images/questions/86b044f2c97bef84524f0bb77ecada5f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/886ab6308afccd849060e70bae49ea1c.jpg" afterPath="$PROJECT_DIR$/public/images/questions/886ab6308afccd849060e70bae49ea1c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/896cc6840bf45ae010044083d3c1ad66.jpg" afterPath="$PROJECT_DIR$/public/images/questions/896cc6840bf45ae010044083d3c1ad66.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/bdeadbada0b79abea618790b148a038c.jpg" afterPath="$PROJECT_DIR$/public/images/questions/bdeadbada0b79abea618790b148a038c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/bf4637b7374821080f5495fd0dfc555c.jpg" afterPath="$PROJECT_DIR$/public/images/questions/bf4637b7374821080f5495fd0dfc555c.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/c9a2c92d2487942c8dd42388d0765fef.jpg" afterPath="$PROJECT_DIR$/public/images/questions/c9a2c92d2487942c8dd42388d0765fef.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/cfd807a817fa535b4561d32abc593a68.jpg" afterPath="$PROJECT_DIR$/public/images/questions/cfd807a817fa535b4561d32abc593a68.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/d70eb2cf97a4f228ef96f60a4c2e58ff.jpg" afterPath="$PROJECT_DIR$/public/images/questions/d70eb2cf97a4f228ef96f60a4c2e58ff.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/e080e8b03e7b286262405810f921d05f.jpg" afterPath="$PROJECT_DIR$/public/images/questions/e080e8b03e7b286262405810f921d05f.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/e4e8f7188e574afe1ae869b14c64a337.jpg" afterPath="$PROJECT_DIR$/public/images/questions/e4e8f7188e574afe1ae869b14c64a337.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/e874f3b6d90fd2c686f08e5c4a210566.jpg" afterPath="$PROJECT_DIR$/public/images/questions/e874f3b6d90fd2c686f08e5c4a210566.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/ebfd07f5ba495017f5cbd0c95402bef8.jpg" afterPath="$PROJECT_DIR$/public/images/questions/ebfd07f5ba495017f5cbd0c95402bef8.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/questions/f146fa5cc73203266ef23c822cbca537.jpg" afterPath="$PROJECT_DIR$/public/images/questions/f146fa5cc73203266ef23c822cbca537.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bower_components/bootstrap/test-infra/s3_cache.py" afterPath="$PROJECT_DIR$/public/bower_components/bootstrap/test-infra/s3_cache.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/screen.jade" afterPath="$PROJECT_DIR$/views/screen.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/bower_components/bootstrap/test-infra/uncached-npm-install.sh" afterPath="$PROJECT_DIR$/public/bower_components/bootstrap/test-infra/uncached-npm-install.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
     </list>
@@ -470,6 +444,32 @@
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rewindfx-recognition-game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rewindfx-recognition-game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backgrounds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -634,8 +634,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="785" y="247" width="627" height="543" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="785" y="247" width="627" height="543" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28253224" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
