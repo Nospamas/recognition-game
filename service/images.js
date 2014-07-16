@@ -5,7 +5,7 @@ module.exports = [
     },
     {
         name: 'London Symphony Orchestra, The Who: Tommy',
-        image: '1a7d3ae574395981782ab7d85ac4c2b5.jpg'
+        image: 'Screen Shot 2014-07-16 at 14.00.21.png'
     },
     {
         name: 'Guns N\' Roses: Appetite For Destruction',
@@ -41,7 +41,7 @@ module.exports = [
     },
     {
         name: 'David Bowie: Aladdin Sane',
-        image: '886ab6308afccd849060e70bae49ea1c.jpg'
+        image: 'Screen Shot 2014-07-16 at 14.03.04.png'
     },
     {
         name: 'Meat Loaf: Bat Out of Hell',
@@ -57,7 +57,7 @@ module.exports = [
     },
     {
         name: 'The Smiths: The Queen Is Dead',
-        image: 'bdeadbada0b79abea618790b148a038c.jpg'
+        image: 'Screen Shot 2014-07-16 at 14.06.59.png'
     },
     {
         name: 'The Velvet Underground & Nico',
@@ -77,7 +77,7 @@ module.exports = [
     },
     {
         name: 'Blondie: Parallel Lines',
-        image: 'e4e8f7188e574afe1ae869b14c64a337.jpg'
+        image: 'Screen Shot 2014-07-16 at 14.09.28.png'
     },
     {
         name: 'Red Hot Chili Peppers: Blood Sugar Sex Magik',
