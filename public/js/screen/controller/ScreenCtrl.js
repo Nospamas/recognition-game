@@ -49,13 +49,13 @@ angular.module('Screen').controller('ScreenCtrl',
                     vm.state = states.starting;
                     vm.countdowntime = time / 1000;
 
-                    if (time === 15000 && audioAvailable) {
-                        try {
-                            setTimeout(function () {
-                                voiceOver.play();
-                            }, 4000);
-                        } catch (err) {}
-                    }
+//                    if (time === 15000 && audioAvailable) {
+//                        try {
+//                            setTimeout(function () {
+//                                voiceOver.play();
+//                            }, 4000);
+//                        } catch (err) {}
+//                    }
 
                 });
             });

@@ -1,321 +1,98 @@
 module.exports = [
     {
-        name: 'Anne Summers',
-        image: 'ANN-2.jpg'
+        name: 'Blur: Parklife',
+        image: '0a774f59f54a341365b28f5871590487.jpg'
     },
     {
-        name: 'Anne Summers',
-        image: 'ANN.jpg'
+        name: 'London Symphony Orchestra, The Who: Tommy',
+        image: '1a7d3ae574395981782ab7d85ac4c2b5.jpg'
     },
     {
-        name: 'Ben Sherman',
-        image: 'BEN.jpg'
+        name: 'Guns N\' Roses: Appetite For Destruction',
+        image: '3d4a4cda8764b072f3f2b31cb532e48c.jpg'
     },
     {
-        name: 'Blackberry',
-        image: 'BLACKBERRY-2.jpg'
+        name: 'Primal Scream: Screamadelica',
+        image: '6cd01aa3c7f205d965f511cc27335cde.jpg'
     },
     {
-        name: 'Blackberry',
-        image: 'BLACKBERRY.jpg'
+        name: 'Nirvana: Nevermind',
+        image: '7c261561f6e32062d28f19faf8cc9bd2.jpg'
     },
     {
-        name: 'Bourgois',
-        image: 'BOURGOIS.jpg'
+        name: 'Bruce Springsteen: Born In The USA',
+        image: '33b5c30bfac8e026ce4327c4e4f68cbe.jpg'
     },
     {
-        name: 'Bovril',
-        image: 'BOVRIL.jpg'
+        name: 'Prince: Purple Rain',
+        image: '86a26e878f7009bbaabc79397d8a6850.jpg'
     },
     {
-        name: 'Brasso',
-        image: 'BRASSO.jpg'
+        name: 'REM: Automatic For The People',
+        image: '86b044f2c97bef84524f0bb77ecada5f.jpg'
     },
     {
-        name: 'Brita',
-        image: 'BRITA.jpg'
+        name: 'The Rolling Stones: Exile On Main St.',
+        image: '636dbb5a16bc7c90129c8a85cb2b6f7f.jpg'
     },
     {
-        name: 'Burberry',
-        image: 'BURBERRY.jpg'
+        name: 'The Clash: London Calling',
+        image: '737cf686d1d6f45fd3309262c35b1d79.jpg'
     },
     {
-        name: 'Canon',
-        image: 'CANON.jpg'
+        name: 'David Bowie: Aladdin Sane',
+        image: '886ab6308afccd849060e70bae49ea1c.jpg'
     },
     {
-        name: 'Cat',
-        image: 'CAT.jpg'
+        name: 'Meat Loaf: Bat Out of Hell',
+        image: '896cc6840bf45ae010044083d3c1ad66.jpg'
     },
     {
-        name: 'Chanel',
-        image: 'CHANEL.jpg'
+        name: 'Led Zeppelin: Led Zeppelin IV',
+        image: '30071af19bcab11dcba4dde065e350a2.jpg'
     },
     {
-        name: 'Cobra',
-        image: 'COBRA.jpg'
+        name: 'Michael Jackson: Thriller',
+        image: '4173885a20cb9ed4e3400637fba37f8d.jpg'
     },
     {
-        name: 'Coke',
-        image: 'COKE.jpg'
+        name: 'The Smiths: The Queen Is Dead',
+        image: 'bdeadbada0b79abea618790b148a038c.jpg'
     },
     {
-        name: 'Converse',
-        image: 'CONVERSE.jpg'
+        name: 'The Velvet Underground & Nico',
+        image: 'bf4637b7374821080f5495fd0dfc555c.jpg'
     },
     {
-        name: 'Corona',
-        image: 'CORONA.jpg'
+        name: 'Mike Oldfield: Tubular Bells',
+        image: 'c9a2c92d2487942c8dd42388d0765fef.jpg'
     },
     {
-        name: 'Creme Egg',
-        image: 'CREMEEGG.jpg'
+        name: 'Massive Attack: Blue Lines',
+        image: 'cfd807a817fa535b4561d32abc593a68.jpg'
     },
     {
-        name: 'Crunchy',
-        image: 'CRUNCHY.jpg'
+        name: 'Radiohead: OK Computer',
+        image: 'd70eb2cf97a4f228ef96f60a4c2e58ff.jpg'
     },
     {
-        name: 'Doc Martin',
-        image: 'DM.jpg'
+        name: 'Blondie: Parallel Lines',
+        image: 'e4e8f7188e574afe1ae869b14c64a337.jpg'
     },
     {
-        name: 'Doc Martin',
-        image: 'DOC.jpg'
+        name: 'Red Hot Chili Peppers: Blood Sugar Sex Magik',
+        image: 'e080e8b03e7b286262405810f921d05f.jpg'
     },
     {
-        name: 'Durex',
-        image: 'DUREX.jpg'
+        name: 'The Sex Pistols: Never Mind The Bollocks, Here\'s The Sex Pistols',
+        image: 'e874f3b6d90fd2c686f08e5c4a210566.jpg'
     },
     {
-        name: 'Dyson',
-        image: 'DYSON.jpg'
+        name: 'U2: Achtung Baby',
+        image: 'ebfd07f5ba495017f5cbd0c95402bef8.jpg'
     },
     {
-        name: 'Energizer',
-        image: 'ENERGIZER.jpg'
-    },
-    {
-        name: 'Fortnum & Mason',
-        image: 'F&M.jpg'
-    },
-    {
-        name: 'Fairy',
-        image: 'FAIRY.jpg'
-    },
-    {
-        name: 'Gaviscon',
-        image: 'GAVISCON.jpg'
-    },
-    {
-        name: 'ghd',
-        image: 'GHD.jpg'
-    },
-    {
-        name: 'Gill',
-        image: 'GILL.jpg'
-    },
-    {
-        name: 'Glenfiddich',
-        image: 'GLENN.jpg'
-    },
-    {
-        name: 'Guiness',
-        image: 'GUINNESS.jpg'
-    },
-    {
-        name: 'Heinz',
-        image: 'HEINZ.jpg'
-    },
-    {
-        name: 'Hotel',
-        image: 'HOTEL.jpg'
-    },
-    {
-        name: 'Innocent',
-        image: 'INNOCENT.jpg'
-    },
-    {
-        name: 'Jägermeister',
-        image: 'JAEGER.jpg'
-    },
-    {
-        name: 'Jaguar',
-        image: 'JAGUAR.jpg'
-    },
-    {
-        name: 'Jack Daniels',
-        image: 'JD.jpg'
-    },
-    {
-        name: 'Kindle',
-        image: 'KINDLE.jpg'
-    },
-    {
-        name: 'Mr Kipling',
-        image: 'KIPLING.jpg'
-    },
-    {
-        name: 'Kit Kat',
-        image: 'KITKAT.jpg'
-    },
-    {
-        name: 'Koppaberg',
-        image: 'KOPP.jpg'
-    },
-    {
-        name: 'Krispy Kreme',
-        image: 'KRISPY.jpg'
-    },
-    {
-        name: 'Lambrini',
-        image: 'LAMBRINI.jpg'
-    },
-    {
-        name: 'Levi\'s',
-        image: 'LEVI.jpg'
-    },
-    {
-        name: 'Lynx',
-        image: 'LYNX.jpg'
-    },
-    {
-        name: 'Marmite',
-        image: 'MARM.jpg'
-    },
-    {
-        name: 'Mars',
-        image: 'MARS.jpg'
-    },
-    {
-        name: 'MaxiNutrition',
-        image: 'MAXIMUSC.jpg'
-    },
-    {
-        name: 'Mentos',
-        image: 'MENTOS.jpg'
-    },
-    {
-        name: 'Mercedes',
-        image: 'MERC.jpg'
-    },
-    {
-        name: 'Moet',
-        image: 'MOET.jpg'
-    },
-    {
-        name: 'Mulberry',
-        image: 'MULBERRY-2.jpg'
-    },
-    {
-        name: 'Mulberry',
-        image: 'MULBERRY.jpg'
-    },
-    {
-        name: 'Nikon',
-        image: 'NIKON-2.jpg'
-    },
-    {
-        name: 'Nikon',
-        image: 'NIKON.jpg'
-    },
-    {
-        name: 'Nivea',
-        image: 'NIVEA.jpg'
-    },
-    {
-        name: 'Orangina',
-        image: 'ORANGINA.jpg'
-    },
-    {
-        name: 'Oxo',
-        image: 'OXO.jpg'
-    },
-    {
-        name: 'Parker',
-        image: 'PARKER.jpg'
-    },
-    {
-        name: 'Pears',
-        image: 'PEARS.jpg'
-    },
-    {
-        name: 'Pepsi',
-        image: 'PEPSI.jpg'
-    },
-    {
-        name: 'Peroni',
-        image: 'PERONI.jpg'
-    },
-    {
-        name: 'PG tips',
-        image: 'PGTIPS.jpg'
-    },
-    {
-        name: 'Pot Noodle',
-        image: 'POTNOODLE.jpg'
-    },
-    {
-        name: 'PlayStation',
-        image: 'PS3.jpg'
-    },
-    {
-        name: 'Quakers',
-        image: 'QUAKERS.jpg'
-    },
-    {
-        name: 'Ray Ban',
-        image: 'RAY.jpg'
-    },
-    {
-        name: 'Red Bull',
-        image: 'REDBULL.jpg'
-    },
-    {
-        name: 'Schweppes',
-        image: 'SCHHH.jpg'
-    },
-    {
-        name: 'Smint',
-        image: 'SMINT.jpg'
-    },
-    {
-        name: 'Smirnoff',
-        image: 'SMIRN.jpg'
-    },
-    {
-        name: 'Square',
-        image: 'SQUARE.jpg'
-    },
-    {
-        name: 'Strongbow',
-        image: 'STRONGB.jpg'
-    },
-    {
-        name: 'Tiffany & Co.',
-        image: 'TIFF.jpg'
-    },
-    {
-        name: 'Tropicana',
-        image: 'TROPICANA.jpg'
-    },
-    {
-        name: 'Ugg',
-        image: 'UGG.jpg'
-    },
-    {
-        name: 'Vaseline',
-        image: 'VASELINE.jpg'
-    },
-    {
-        name: 'Weetabix',
-        image: 'WEETABIX.jpg'
-    },
-    {
-        name: 'Xbox',
-        image: 'XBOX.jpg'
-    },
-    {
-        name: 'Yell',
-        image: 'YELL.jpg' }
+        name: 'Stevie Wonder: Songs In The Key Of Life',
+        image: 'f146fa5cc73203266ef23c822cbca537.jpg'
+    }
 ];

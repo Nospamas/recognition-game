@@ -38,7 +38,7 @@ html(ng-app='Screen')
             .game-image
                 img.img-responsive(ng-src='/images/questions/{{vm.question.image}}')
             .buttons
-                a.btn.btn-default.btn-lg.btn-block(href='', ng-repeat='guess in vm.question.guesses') {{ guess }}
+                a.btn.btn-default.btn-lg.btn-block(href='', ng-repeat='guess in vm.question.guesses' ng-bind-html='guess | newline')
         .countdown.text-center(ng-if='vm.state === "starting"')
             h1
                 | Next game starts in {{ vm.countdowntime }}!
@@ -47,7 +47,7 @@ html(ng-app='Screen')
         .top-text
             carousel
                 slide
-                    h4 Havas Café  – The Gutter Bar Game
+                    h4 Spotify’s guess the album cover game
                 //slide
                 //    h4 Havas Café - Quick fire guess the brand
                 //slide
@@ -58,12 +58,14 @@ html(ng-app='Screen')
 
         // build:js ./scripts/libs.js
         script(src='/bower_components/angular/angular.js')
+        script(src='/bower_components/angular-sanitize/angular-sanitize.js')
         script(src='/bower_components/jquery/dist/jquery.js')
         script(src='/bower_components/momentjs/moment.js')
         script(src='/socket.io/socket.io.js')
         // endbuild
         // build:js ./scripts/app.js
         script(src='/js/common/service/LogSvc.js')
+        script(src='/js/common/filter/newline.js')
         script(src='/js/screen/main.js')
         script(src='/js/screen/service/ScreenSvc.js')
         script(src='/js/screen/service/QuerySvc.js')
