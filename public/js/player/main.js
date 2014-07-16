@@ -1,4 +1,4 @@
-angular.module('Player', ['Common'])
+angular.module('Player', ['Common', 'ngSanitize'])
     .run(['$window', 'PlayerSvc',
         function ($window, PlayerSvc) {
             PlayerSvc.init();

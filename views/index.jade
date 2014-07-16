@@ -11,7 +11,7 @@ html(ng-app='Player')
         .container
             .row
                 .col-xs-12
-                    img.img-responsive.center-block(src='/images/backgrounds/havaslogogame.jpg')
+                    img.img-responsive.center-block(src='/images/backgrounds/Spotify_mobile-V3.png')
             .row(ng-if='vm.state === "awaitingname"')
                 .col-xs-12
                     form.form(ng-submit='vm.onPlayerSubmit()')
@@ -37,7 +37,7 @@ html(ng-app='Player')
                         href='',
                         ng-disabled='!vm.allowGuesses',
                         ng-click='vm.onAnswerSelect(vm.question.questionIndex, $index)',
-                        ng-class='{ "btn-default": vm.selectedAnswer !== $index, "btn-primary": vm.selectedAnswer === $index }') {{ guess }}
+                        ng-class='{ "btn-default": vm.selectedAnswer !== $index, "btn-primary": vm.selectedAnswer === $index }', ng-bind-html='guess | newline')
             .row(ng-if='vm.state === "finalscore"')
                 .col-xs-12.text-center
                     h4 {{ vm.playerName }} your score for this game was:
@@ -50,6 +50,7 @@ html(ng-app='Player')
 
         // build:js ./scripts/libs.js
         script(src='/bower_components/angular/angular.js')
+        script(src='/bower_components/angular-sanitize/angular-sanitize.js')
         script(src='/bower_components/jquery/dist/jquery.js')
         script(src='/bower_components/momentjs/moment.js')
         script(src='/socket.io/socket.io.js')
@@ -57,6 +58,7 @@ html(ng-app='Player')
         // build:js ./scripts/app.js
         script(src='/js/fastclick.js')
         script(src='/js/common/service/LogSvc.js')
+        script(src='/js/common/filter/newline.js')
         script(src='/js/player/main.js')
         script(src='/js/player/service/PlayerSvc.js')
         script(src='/js/player/controller/PlayerCtrl.js')
